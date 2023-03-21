@@ -1,0 +1,52 @@
+import React from 'react';
+import Image from 'next/image';
+import { useRouter } from 'next/router'
+
+const RecommendedLogo = () => {
+    const router = useRouter();
+
+    return (
+        <>
+            <div className="relative border-b border-[#CECECE] md:border-b-0 -mt-20 md:-mt-0">
+                <div className='invisible md:visible'>
+                    <Image
+                        src='images/newarivalimage.svg' alt=""
+                        className='w-full h-1/2 '
+                        width={90}
+                        height={90}
+                    />
+                </div>
+
+                <div className="flex justify-end px-6 md:mt-10 md:visible invisible">
+                    <div className="relative">
+                        <select className="rounded-[5px] border border-[#DADADA] appearance-none focus:outline-none  pl-3  w-[110px] h-[40px] ">
+                            <option>Filter</option>
+                            <option>All</option>
+                            <option>Arivals</option>
+                            <option>All Posts</option>
+                        </select>
+                        <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" class="w-4 h-4 mt-1" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div className="flex-grow pl-6 absolute top-1/2 md:left-12">
+                    <div className="gap-6 md:gap-0 mt-10 md:mt-0 inline-flex md:text-[#FFFFFF] md:text-red-300 text-[#0A0A0A] text-lg md:text-8xl font-normal text-[#0A0A0A] uppercase">
+                        <div className='md:invisible visible'>
+                            <Image onClick={() => router.push('http://localhost:3000/')}
+                                src='icons/arrowicon.svg'
+                                width={90}
+                                height={90}
+                                className='w-[12px] height-[12px] py-2 mr-4'
+                            />
+                        </div>
+                        <h6>Recommended</h6>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+export default RecommendedLogo;

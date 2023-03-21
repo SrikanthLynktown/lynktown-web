@@ -8,22 +8,23 @@ import LandingSection from '@/components/Landingsection'
 import Arivals from '@/components/LandingCardSection/Arivals'
 import RequestOrder from '@/components/LandingCardSection/RequestOrder'
 import ArivalsHeader from '@/components/LandingCardSection/ArivalHeader'
-import Extra from '@/components/LandingCardSection/Extra'
-import Button from '@/components/LandingCardSection/Button'
 import RecommnedHeader from '@/components/LandingCardSection/RecommendedHeader'
 import Recommended from '@/components/LandingCardSection/Recommended'
 import ProductsHeader from '@/components/LandingCardSection/ProductsHeader'
 import Products from '@/components/LandingCardSection/Products'
+import ProductsButton from '@/components/LandingCardSection/ProductsButton'
+import ArivalsButton from '@/components/LandingCardSection/ArrivalsButton'
+import RecommendedButton from '@/components/LandingCardSection/RecommendedButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <div className='bg-[#F5F5F5] px-4'>
+      <div className='bg-[#F5F5F5] px-4 '>
         <div className='bg-[#FFFFFF] rounded-b-lg mb-20'>
-          <div>
-            <Header />
+          <div >
+            <Header/>
           </div>
           <div>
             <LandingSection />
@@ -32,7 +33,7 @@ export default function Home() {
             <BioInfo />
             <RequestOrder />
             {/* Arivals section */}
-            <div className='border-b-4 border-[#D9D9D9]  md:border-b-0 md:border-t-0 md:py-0 pb-20'>
+            <div className='border-b-4 border-[#D9D9D9]  md:border-b-0 md:border-t-0 md:py-0 pb-20 '>
               <ArivalsHeader />
               <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <Arivals />
@@ -40,12 +41,17 @@ export default function Home() {
                 <Arivals />
                 <Arivals />
               </div>
-              <Button />
+              <ArivalsButton/>
             </div>
             {/* Arivals section */}
 
 
             {/* Recommended part */}
+            {/* <div className='border-b-4 border-[#D9D9D9] md:border-b-0 md:py-0 pb-20'>
+              <RecommnedHeader />
+              <Recommended />
+            </div> */}
+
             <div className='border-b-4 border-[#D9D9D9] md:border-b-0 md:py-0 pb-20'>
               <RecommnedHeader />
               <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
@@ -54,7 +60,7 @@ export default function Home() {
                 <Recommended />
                 <Recommended />
               </div>
-              <Button />
+              <RecommendedButton />
             </div>
             {/* Recommended part */}
 
@@ -71,6 +77,9 @@ export default function Home() {
                 <Products />
                 <Products />
                 <Products />
+              </div>
+              <div>
+                <ProductsButton />
               </div>
             </div>
             {/* Products part */}

@@ -6,23 +6,23 @@ const Header = () => {
     return (
         <>
             <nav
-                class="flex-no-wrap relative flex w-full items-center justify-between  py-4  dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start"
+                className="flex-no-wrap relative flex w-full items-center justify-between  py-4  dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start "
                 data-te-navbar-ref>
-                <div class="flex w-full flex-wrap items-center justify-between px-6">
+                <div className="flex w-full flex-wra items-center justify-between px-6">
                     <button
-                        class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                        className="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
                         type="button"
                         data-te-collapse-init
                         data-te-target="#navbarSupportedContent1"
                         aria-controls="navbarSupportedContent1"
                         aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="[&>svg]:w-7">
+                        <span className="[&>svg]:w-7">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-7 w-7">
+                                className="h-7 w-7">
                                 <path
                                     fill-rule="evenodd"
                                     d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
@@ -31,11 +31,11 @@ const Header = () => {
                         </span>
                     </button>
                     <div
-                        class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+                        className="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
                         id="navbarSupportedContent1"
                         data-te-collapse-item>
                         <a
-                            class="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
+                            className="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
                             href="#">
                             <img
                                 src="images/Group 7739.svg" alt=""
@@ -44,65 +44,92 @@ const Header = () => {
 
                     </div>
 
-                    <div class="flex justify-center mt-2 px-4">
-                        <div class="mb-3 xl:w-64 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400">
-                            <input
-                                type="search"
-                                class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent px-3 py-1.5 text-[13px] font-normal text-[#9D9D9D]     focus:outline-none"
-                                id="exampleSearch"
-                                placeholder="Search for designers, brands and more" />
+                    <div className="relative flex items-center ">
+                        <div className="flex justify-center mt-2 md:px-4 ">
+                            <div className="invisible md:visible mb-2 xl:w-72 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400">
+
+                                <input
+                                    type="search"
+                                    className="md:px-6 relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent px-3 py-1.5 text-[13px] font-normal text-[#9D9D9D] focus:outline-none"
+                                    id="exampleSearch"
+                                    placeholder="Search for designers, brands and more" />
+
+                                {/* <div className=''> */}
+                                <Image
+                                    src="icons/searchicon.svg"
+                                    width={10}
+                                    height={10}
+                                    className='absolute w-[15px] h-[16px] top-[17px] ml-2'
+                                />
+                                {/* </div> */}
+                            </div>
+
+                            <div className='md:invisible visible mt-2 px-4'>
+                                <Image
+                                    src="icons/searchicon.svg"
+                                    width={10}
+                                    height={10}
+                                    className='w-[18px] h-[19px] '
+                                />
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="relative flex items-center">
 
-                        <a
-                            class="px-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                        <div
+                            className="flex md:visible invisible md:px-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
                             href="#">
-                            <img
-                                src="icons/profile.svg"
-                                class="h-[32px] w-[28px]"
+                            <Image
+                                src="icons/Vector.svg"
+                                className="w-[18px] h-[19px] md:h-[32px] md:w-[28px]"
                                 alt=""
-                                loading="lazy" />
+                                loading="lazy"
+                                width={18}
+                                height={19}
+                                 />
 
-                        </a>
+                            <Image
+                                src="icons/wishlist.svg"
+                                className="visible md:invisible w-[18px] h-[19px]"
+                                alt=""
+                                loading="lazy"
+                                width={18}
+                                height={19}
+                                 />
 
-
-                        <div class="relative" data-te-dropdown-ref>
-                            <a
-                                class="hidden-arrow px-4 flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
-                                href="#"
-                                id="dropdownMenuButton2"
-                                role="button"
-                                data-te-dropdown-toggle-ref
-                                aria-expanded="false">
-                                <img
-                                    src='icons/profile.svg'
-                                    class="h-[32px] w-[28px]"
-                                    alt=""
-                                    loading="lazy" />
-                            </a>
                         </div>
 
-                        <div class="relative" data-te-dropdown-ref>
-                            <a
-                                class="hidden-arrow  px-2 flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                                href="#"
-                                id="dropdownMenuButton1"
-                                role="button"
-                                data-te-dropdown-toggle-ref
-                                aria-expanded="false">
-                                <img
-                                    src='icons/notification.svg'
-                                    class="h-[30px] w-[25px]"
-                                    alt=""
-                                    loading="lazy" />
-                                <span
-                                    class="absolute -mt-6 ml-3 rounded-full bg-[#DA1E28] py-0 px-1.5 text-xs text-white"
-                                >1</span>
 
-                            </a>
+                        <div
+                            className=" px-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#">
+                            <Image
+                                src='icons/profile.svg'
+                                className="w-[18px] h-[19px] md:h-[32px] md:w-[28px]"
+                                alt=""
+                                loading="lazy"
+                                width={18}
+                                height={19}
+                                 />
+                        </div>
 
+                        <div
+                            className="hidden-arrow md:px-4 flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#"
+                            id="dropdownMenuButton1"
+                            role="button"
+                            data-te-dropdown-toggle-ref
+                            aria-expanded="false">
+                            <Image
+                                src='icons/notification.svg'
+                                className="w-[18px] h-[19px] md:h-[30px] md:w-[25px]"
+                                alt=""
+                                loading="lazy"
+                                width={18}
+                                height={19}
+                                 />
+                            <span
+                                className="absolute -mt-6 md:-mt-8 ml-1 md:ml-3 rounded-full bg-[#DA1E28] py-0 px-1 text-xs text-white"
+                            >1</span>
                         </div>
                     </div>
                 </div>
