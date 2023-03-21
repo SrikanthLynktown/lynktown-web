@@ -67,8 +67,8 @@ const Header = () => {
                             <div className='md:invisible visible mt-2 px-4'>
                                 <Image
                                     src="icons/searchicon.svg"
-                                    width={10}
-                                    height={10}
+                                    width={18}
+                                    height={19}
                                     className='w-[18px] h-[19px] '
                                 />
                             </div>
@@ -89,7 +89,7 @@ const Header = () => {
 
                             <Image
                                 src="icons/wishlist.svg"
-                                className="visible md:invisible w-[18px] h-[19px]"
+                                className="visible md:invisible w-[18px] h-[19px] -ml-4 "
                                 alt=""
                                 loading="lazy"
                                 width={18}

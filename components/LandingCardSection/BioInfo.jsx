@@ -5,12 +5,12 @@ const BioInfo = () => {
         <>
             <div className=''>
                 <div className="text-gray-600 body-font ">
-                    <div className="container px-5 mt-14 py-14 mx-auto">
+                    <div className="container px-5 mt-24 py-14 mx-auto">
                         <div className="flex flex-col text-center w-full">
                             <h1 className="text-[#0A0A0A] text-[20px] md:text-[42px] font-normal font-serif leading-[31px] py-5 md:mt-10">Bio Info</h1>
                             {/* <h2 className="font-medium text-sm text-[#3B3B3B]">Explore NC’s Boutique.
                                 Look into our BTS, POVs, Tips, Styling recommendations and more!</h2> */}
-                            <p className="w-[329px] h-[47px] lg:w-1/3 mx-auto text-[#3B3B3B] text-[14px] font-bold md:text-[20px] md:font-normal font-sans leading-7 text-center">
+                            <p className="w-[329px] h-[47px] lg:w-1/3 mx-auto text-[#3B3B3B] text-[14px] font-bold md:text-[20px] md:font-normal font-sans leading-7 text-left px-2">
                                 Explore NC’s Boutique.
                                 Look into our BTS, POVs, Tips, Styling recommendations and more!
                             </p>
