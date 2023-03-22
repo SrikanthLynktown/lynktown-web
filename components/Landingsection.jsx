@@ -29,8 +29,8 @@ const LandingSection = () => {
                 </div>
 
                 <div className="text-gray-600 body-font ">
-                    <div className='landing absolute top-[150px] left-2.5  md:top-96  md:left-40'>
-                        <div className="p-4 md:p-6 w-80 h-[206px] md:h-[504px] md:w-[1000px] flex flex-col  bg-white border border-gray-200 rounded-lg shadow md:flex-row ">
+                    <div className=' anding absolute top-[150px] left-1 md:top-96  md:left-40'>
+                        <div className="p-4 w-[300px] h-[206px]  md:p-6 md:h-[504px] md:w-[1000px] flex flex-col  bg-white border border-gray-200 rounded-lg shadow md:flex-row ">
                             <Image className="object-cover -mt-16 rounded md:-mt-0 w-[70px] h-[73px] md:w-[239px] md:rounded-lg  md:h-[411px]  left-[41px]" src="images/manager-new-workshop 1.svg" alt=""
                                 width={90}
                                 height={90}
@@ -38,19 +38,19 @@ const LandingSection = () => {
                             <div className="flex flex-col md:p-14 leading-normal ">
                                 {/* Following */}
                                 <div>
-                                    <div className='mr-4 md:mr-0 md:invisible visible ml-60 '>
+                                    <div className='mr-4 md:mr-0 md:invisible visible ml-56 '>
                                         <Image src="icons/share.svg" className='w-[30px] h-[30px] md:w-[49px] md:h-[49px]' alt=""
                                             width={49}
                                             height={49}
                                         />
                                     </div>
-                                    <p className='ml-56 w-[59px] h-[18px] text-[#897552] text-[14px] font-medium md:invisible visible'>following</p>
+                                    <p className='ml-52 w-[59px] h-[18px] text-[#897552] text-[14px] font-medium md:invisible visible'>following</p>
                                 </div>
                                 {/* Following */}
                                 <div className='border-dotted border-b-2 border-[#999999] -mt-5 md:py-6'>
                                     <div className="flex gap-12 md:gap-0">
                                         <h5 className="md:mb-2 w-[133px] h-[31px] text-[20px] md:text-[38px] text-[#000000] md:w-[256px] md:h-[60px] lg:w-[256px] lg:h-[60px] font-normal font-serif">NC’s Boutique</h5>
-                                        <div className='flex md:gap-6 md:gap-0 md:ml-40 md:visible invisible '>
+                                        <div className='flex md:gap-6  md:ml-40 md:visible invisible '>
                                             <Image src="icons/share.svg" className='w-[30px] h-[30px] md:w-[49px] md:h-[49px]' alt=""
                                                 width={49}
                                                 height={49}
@@ -106,7 +106,7 @@ const LandingSection = () => {
                                        
                                     </div>
 
-                                    <div className='flex gap-4 py-4 mr-4 md:mr-0 md:invisible visible '>
+                                    <div className='flex gap-2 py-4  md:mr-0 md:invisible visible '>
                                         {/* <Image src="icons/bag.svg" className='w-[20px] h-[30px] bg-[#897552] text-red-300 rounded-full p-4' alt=""
                                             width={30}
                                             height={30}
