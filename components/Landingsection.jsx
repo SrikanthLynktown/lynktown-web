@@ -29,7 +29,7 @@ const LandingSection = () => {
                 </div>
 
                 <div className="text-gray-600 body-font ">
-                    <div className=' anding absolute top-[150px] left-1 md:top-96  md:left-40'>
+                    <div className=' anding absolute top-[150px] left-1.5 md:top-96  md:left-40'>
                         <div className="p-4 w-[300px] h-[206px]  md:p-6 md:h-[504px] md:w-[1000px] flex flex-col  bg-white border border-gray-200 rounded-lg shadow md:flex-row ">
                             <Image className="object-cover -mt-16 rounded md:-mt-0 w-[70px] h-[73px] md:w-[239px] md:rounded-lg  md:h-[411px]  left-[41px]" src="images/manager-new-workshop 1.svg" alt=""
                                 width={90}
