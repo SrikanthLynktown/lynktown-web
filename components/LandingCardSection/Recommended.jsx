@@ -16,8 +16,8 @@ const Recommended = () => {
                                         width={459}
                                         height={371}
                                     />
-                                    <Image
-                                        alt="ecommerce" className="object-cover object-center w-5 h-5 absolute top-4 left-80 sm:left-60 md:left-60 text-[#6C6C6C] block" src="icons/wishlist.svg"
+                                     <Image
+                                        alt="ecommerce" className="object-cover object-center w-5 h-5 absolute top-4 md:left-[400px] left-[260px]  text-[#6C6C6C] block" src="icons/wishlist.svg"
                                         width={459}
                                         height={371}
                                     />

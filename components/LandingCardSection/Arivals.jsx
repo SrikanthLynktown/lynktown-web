@@ -8,14 +8,14 @@ const Arivals = () => {
                     <div className="containe px-5 mt-5 md:mt-16 mx-auto">
                         <div className="flex flex-wrap -m-4">
                             <div className=" p-4 w-full">
-                                <div className="block relative rounded overflow-hidden relative">
+                                <div className="block relative rounded overflow-hidden">
                                     <Image
                                         alt="ecommerce" className="object-cover object-center w-full h-full block" src="images/Rectangle 4530.svg"
                                         width={459}
                                         height={371}
                                     />
                                     <Image
-                                        alt="ecommerce" className="object-cover object-center w-5 h-5 absolute top-4 left-80 sm:left-60 md:left-60 text-[#6C6C6C] block" src="icons/wishlist.svg"
+                                        alt="ecommerce" className="object-cover object-center w-5 h-5 absolute top-4 md:left-[400px] left-[260px]  text-[#6C6C6C] block" src="icons/wishlist.svg"
                                         width={459}
                                         height={371}
                                     />

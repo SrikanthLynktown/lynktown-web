@@ -62,8 +62,8 @@ const BioInfo = () => {
                         </div>
                     </div>
                 </section>
-                <div className='p-4 w-[150px] h:[21px] md:w-[343px] md:h-[50px] flex mx-auto mt-10  text-[#6A5B40] rounded-[5px] border border-[#6A5B40] cursor-pointer  rounded text-medium text-[14px] uppercase '>
-                    <button className="px-4 md:px-28 text-[14px] font-bold md:font-normal font-sans leading-4">View More</button>
+                <div className='p-4 w-full h-full md:w-[343px] md:h-[50px] flex mx-auto mt-10  text-[#6A5B40] rounded-[5px] border border-[#6A5B40] cursor-pointer rounded '>
+                    <button className="px-4 mx-auto md:px-28 text-[14px] font-bold md:font-normal font-sans leading-[18px]">View More</button>
                 </div>
             </div>
         </>

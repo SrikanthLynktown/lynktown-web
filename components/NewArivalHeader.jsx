@@ -11,9 +11,9 @@ const NewArivalHeader = () => {
                 <div className='invisible md:visible'>
                     <Image
                         src='images/newarivalimage.svg' alt=""
-                        className='w-full h-1/2 '
-                        width={90}
-                        height={90}
+                        className='w-full h-1/2 md:w-full'
+                        width={1400}
+                        height={426}
                     />
                 </div>
 
@@ -31,8 +31,8 @@ const NewArivalHeader = () => {
                             </svg>
                         </span>
                     </div>
-                </div> 
-                <div className="flex-grow px-6  absolute top-1/2 md:left-12 ">
+                </div>
+                <div className="flex-grow px-6  absolute md:top-[60px] lg:top-1/2 md:left-12 ">
                     <div className="gap-6 md:gap-0 mt-10 md:mt-0 inline-flex ">
                         <div className='md:invisible visible'>
                             <Image onClick={() => router.push('http://localhost:3000/')}
@@ -42,7 +42,7 @@ const NewArivalHeader = () => {
                                 className='w-[12px] height-[12px] py-2 mr-4'
                             />
                         </div>
-                        <h6 className=' text-[18px] text-lg md:text-8xl text-[#0A0A0A] md:text-[#FFFFFF] font-normal font-serif uppercase '>New Arivals</h6>
+                        <h6 className='text-[18px] md:text-[50px] text-[#0A0A0A] md:text-[#FFFFFF] font-normal font-serif md:leading-[165px] uppercase '>New Arivals</h6>
                     </div>
                 </div>
             </div>
