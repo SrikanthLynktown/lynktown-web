@@ -3,14 +3,14 @@ import React from 'react';
 const BioInfo = () => {
     return (
         <>
-            <div className=''>
+            <div className='w-full md:w-[1000px] lg:w-full '>
                 <div className="text-gray-600 body-font ">
-                    <div className="container px-5 mt-28 py-14 mx-auto">
+                    <div className="container px-2 mt-28 md:mt-10 lg:mt-24 py-14 md:py-20  lg:py-10 mx-auto">
                         <div className="flex flex-col  w-full">
                             <h1 className="text-center text-[#0A0A0A] text-[20px] md:text-[42px] font-normal font-serif leading-[31px] py-5 md:mt-10">Bio Info</h1>
                             {/* <h2 className="font-medium text-sm text-[#3B3B3B]">Explore NC’s Boutique.
                                 Look into our BTS, POVs, Tips, Styling recommendations and more!</h2> */}
-                            <p className="w-[329px] h-[47px] lg:w-1/3 mx-auto text-[#3B3B3B] text-[14px] font-bold md:text-[20px] md:font-normal font-sans leading-7 text-left px-2">
+                            <p className="w-[329px] h-[47px] md:w-full lg:w-full mx-auto text-[#3B3B3B] lg:text-center text-[14px] font-bold md:text-[20px] md:font-normal font-sans leading-7 text-left px-2">
                                 Explore NC’s Boutique.
                                 Look into our BTS, POVs, Tips, Styling recommendations and more!
                             </p>

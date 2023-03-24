@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
             <nav
-                className="flex-no-wrap relative flex w-full items-center justify-between  py-4  dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start "
+                className="w-full md:w-[1000px] lg:w-full  flex-no-wrap relative flex items-center justify-between  py-4  dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start "
                 data-te-navbar-ref>
                 <div className="flex w-full flex-wra items-center justify-between px-6">
                     <button

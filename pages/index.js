@@ -21,7 +21,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      <div className='bg-[#F5F5F5] px-4 '>
+      <div className='px-4'>
         <div className='bg-[#FFFFFF] rounded-b-lg mb-20'>
           <div >
             <Header/>
@@ -33,7 +33,7 @@ export default function Home() {
             <BioInfo />
             <RequestOrder />
             {/* Arivals section */}
-            <div className='border-b-4 border-[#D9D9D9]  md:border-b-0 md:border-t-0 md:py-0 pb-20 '>
+            <div className='w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9]  md:border-b-0 md:border-t-0 md:py-0 pb-20 '>
               <ArivalsHeader />
               <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <Arivals />
@@ -52,7 +52,7 @@ export default function Home() {
               <Recommended />
             </div> */}
 
-            <div className='border-b-4 border-[#D9D9D9] md:border-b-0 md:py-0 pb-20'>
+            <div className='w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9] md:border-b-0 md:py-0 pb-20'>
               <RecommnedHeader />
               <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
                 <Recommended />
@@ -66,7 +66,7 @@ export default function Home() {
 
 
             {/* Products part */}
-            <div>
+            <div className='w-full md:w-[1000px] lg:w-full '>
               <ProductsHeader />
               <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4">
                 <Products />

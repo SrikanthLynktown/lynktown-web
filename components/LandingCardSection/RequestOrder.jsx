@@ -4,8 +4,8 @@ const RequestOrder = () => {
     return (
         <>
 
-            <div className="relative text-gray-600 body-font relative mt-5 ">
-                <div className="containe mx-auto flex px-5 py-5 items-center justify-center flex-col">
+            <div className=" relative text-gray-600 body-font relative mt-5 ">
+                <div className="w-full md:w-[1000px] lg:w-full  containe mx-auto flex px-4 py-5 items-center justify-center flex-col">
                     <Image src="images/order request card.svg" alt=""
                         width={1057}
                         height={570}
