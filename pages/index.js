@@ -15,7 +15,9 @@ import Products from '@/components/LandingCardSection/Products'
 import ProductsButton from '@/components/LandingCardSection/ProductsButton'
 import ArivalsButton from '@/components/LandingCardSection/ArrivalsButton'
 import RecommendedButton from '@/components/LandingCardSection/RecommendedButton'
-
+import Slider from '@/components/LandingCardSection/Slider'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -33,26 +35,32 @@ export default function Home() {
             <BioInfo />
             <RequestOrder />
             {/* Arivals section */}
-            <div className='w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9]  md:border-b-0 md:border-t-0'>
-              <ArivalsHeader />
-              <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                <Arivals />
-                <Arivals />
-                <Arivals />
-                <Arivals />
+
+            <div>
+              <div className='invisible  md:visible -mt-[2150px] md:-mt-0 w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9]  md:border-b-0 md:border-t-0'>
+                <ArivalsHeader />
+                <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                  <Arivals />
+                  <Arivals />
+                  <Arivals />
+                  <Arivals />
+                </div>
+                <div className='md:visible invisible'>
+                  <ArivalsButton />
+                </div>
               </div>
-              <div className='md:visible invisible'>
-                <ArivalsButton />
+              <div className='py-4 md:hidden visible'>
+                <ArivalsHeader />
+                <Carousel >
+                  <Arivals />
+                  <Arivals />
+                  <Arivals />
+                  <Arivals />
+                </Carousel>
               </div>
             </div>
             {/* Arivals section */}
 
-
-            {/* Recommended part */}
-            {/* <div className='border-b-4 border-[#D9D9D9] md:border-b-0 md:py-0 pb-20'>
-              <RecommnedHeader />
-              <Recommended />
-            </div> */}
 
             <div className='w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9] md:border-b-0'>
               <RecommnedHeader />
@@ -72,7 +80,7 @@ export default function Home() {
             {/* Products part */}
             <div className='w-full md:w-[1000px] lg:w-full '>
               <ProductsHeader />
-              <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-4">
+              <div className="grid gap-4 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 py-4">
                 <Products />
                 <Products />
                 <Products />
@@ -87,7 +95,6 @@ export default function Home() {
               </div>
             </div>
             {/* Products part */}
-
 
           </div>
         </div>

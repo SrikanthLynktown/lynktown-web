@@ -32,7 +32,8 @@ const NewArivalHeader = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex-grow px-6  absolute md:top-[60px] lg:top-1/2 md:left-12 ">
+                <div className="flex-grow px-6  absolute top-[60px] md:top-[60px] lg:top-1/2 md:left-12 ">
+               
                     <div className="gap-6 md:gap-0 mt-10 md:mt-0 inline-flex ">
                         <div className='md:invisible visible'>
                             <Image onClick={() => router.push('http://localhost:3000/')}

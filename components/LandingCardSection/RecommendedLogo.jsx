@@ -32,7 +32,7 @@ const RecommendedLogo = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex-grow pl-6 absolute md:top-[60px] lg:top-1/2 md:left-12">
+                <div className="flex-grow pl-6 absolute top-[60px] md:top-[60px] lg:top-1/2 md:left-12">
                     <div className="gap-6 md:gap-0 mt-10 md:mt-0 inline-flex md:text-[#FFFFFF] md:text-red-300 text-[#0A0A0A] text-lg md:text-8xl font-normal text-[#0A0A0A] uppercase">
                         <div className='md:invisible visible'>
                             <Image onClick={() => router.push('http://localhost:3000/')}

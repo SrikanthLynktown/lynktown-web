@@ -16,11 +16,13 @@ const HeroSection = () => {
                                         height={371}
                                     />
                                     <Image
-                                        alt="ecommerce" class="object-cover object-center w-5 h-5 absolute top-4 left-80 sm:left-60 md:left-60 text-[#6C6C6C] block" src="icons/wishlist.svg"
+                                        alt="ecommerce" class="object-cover object-center w-5 h-5 absolute top-4 left-[300px] md:left-[310px] lg:left-[240px] text-[#6C6C6C] block" src="icons/wishlist.svg"
                                         width={459}
                                         height={371}
                                     />
+                                   
                                 </div>
+                                
                                 <div className="mt-4">
                                     <h2 className="text-[#0A0A0A] md:text-[18px] font-serif font-bold not-italic">Blue Blue jeans jacket</h2>
                                     <h3 className="text-[#3B3B3B] md:[16px] font-normal font-sans">Sizes: S, M, L</h3>
