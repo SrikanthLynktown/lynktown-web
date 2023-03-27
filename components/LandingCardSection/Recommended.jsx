@@ -10,7 +10,7 @@ const Recommended = () => {
             <div className="containe px-5 mt-5 md:mt-16 mx-auto">
                 <div class="flex flex-wrap -m-4">
                             <div className=" p-4 w-full">
-                                <div className="block relative rounded overflow-hidden relative">
+                                <div className="block relative rounded overflow-hidden">
                                     <Image
                                         alt="ecommerce" className="object-cover object-center w-full h-full block" src="images/Rectangle 4530.svg"
                                         width={459}
@@ -23,9 +23,9 @@ const Recommended = () => {
                                     />
                                 </div>
                                 <div className="mt-4">
-                                    <h2 className="text-[#0A0A0A] md:text-[18px] font-serif font-bold not-italic">Blue Blue jeans jacket</h2>
-                                    <h3 className="text-[#3B3B3B] md:[16px] font-normal font-sans">Sizes: S, M, L</h3>
-                                    <div className="flex">
+                                    <h2 className="text-[#0A0A0A] md:text-[18px] font-serif font-bold not-italic text-left">Blue Blue jeans jacket</h2>
+                                    <h3 className="text-[#3B3B3B] md:[16px] font-normal font-sans text-left">Sizes: S, M, L</h3>
+                                    <div className="flex text-left">
                                         <p className="text-[#0A0A0A] md:text-[16px] font-serif font-bold not-italic">$16.00</p>
                                         <p className="px-2 font-serif font-bold">$16.00</p>
                                         <p className="px-2 font-serif font-bold">$16.00</p>

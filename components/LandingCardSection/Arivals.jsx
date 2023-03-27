@@ -4,7 +4,7 @@ const Arivals = () => {
     return (
         <>
             <div >
-                <section className="text-gray-600 body-font">
+                <section className="text-gray-600 body-font ">
                     <div className="containe px-5 mb-5 md:mt-16 mx-auto">
                         <div className="flex flex-wrap m- ">
                             <div className=" py-3 w-full">

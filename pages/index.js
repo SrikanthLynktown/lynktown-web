@@ -15,9 +15,17 @@ import Products from '@/components/LandingCardSection/Products'
 import ProductsButton from '@/components/LandingCardSection/ProductsButton'
 import ArivalsButton from '@/components/LandingCardSection/ArrivalsButton'
 import RecommendedButton from '@/components/LandingCardSection/RecommendedButton'
-import Slider from '@/components/LandingCardSection/Slider'
 import { Carousel } from 'react-responsive-carousel';
+import HomeModal from '@/components/ModalComponents/homeModal'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Footer from '@/components/Footer'
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -28,27 +36,61 @@ export default function Home() {
           <div >
             <Header />
           </div>
+
+          {/* for Modal */}
+          {/* <HomeModal /> */}
+          {/* for Modal */}
+
           <div>
             <LandingSection />
           </div>
           <div>
             <BioInfo />
             <RequestOrder />
-            {/* Arivals section */}
 
+
+            {/* Arivals section */}
             <div>
+              {/* for desktop */}
               <div className='invisible  md:visible -mt-[2150px] md:-mt-0 w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9]  md:border-b-0 md:border-t-0'>
                 <ArivalsHeader />
-                <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                  <Arivals />
-                  <Arivals />
-                  <Arivals />
-                  <Arivals />
-                </div>
+                <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+                  <SwiperSlide>
+                    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-full">
+                      <Arivals />
+                      <Arivals />
+                      <Arivals />
+                      <Arivals />
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-full">
+                      <Arivals />
+                      <Arivals />
+                      <Arivals />
+                      <Arivals />
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:w-full">
+                      <Arivals />
+                      <Arivals />
+                      <Arivals />
+                      <Arivals />
+                    </div>
+                  </SwiperSlide>
+
+                </Swiper>
+
                 <div className='md:visible invisible'>
                   <ArivalsButton />
                 </div>
               </div>
+              {/* for desktop */}
+
+              {/* for Mobile */}
               <div className='py-4 md:hidden visible'>
                 <ArivalsHeader />
                 <Carousel >
@@ -59,20 +101,54 @@ export default function Home() {
                 </Carousel>
               </div>
             </div>
+            {/* for Mobile */}
+
             {/* Arivals section */}
 
 
-            <div className='w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9] md:border-b-0'>
+            <div className='invisible  md:visible -mt-[2000px] lg:-mt-0 md:-mt-0 w-full md:w-[1000px] lg:w-full  border-b-4 border-[#D9D9D9] md:border-b-0'>
               <RecommnedHeader />
-              <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
-                <Recommended />
-                <Recommended />
-                <Recommended />
-                <Recommended />
-              </div>
+              <Swiper pagination={true} modules={[Pagination]} className="mySwiper ">
+                <SwiperSlide className='lg:mb-10'>
+                  <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:py-">
+                    <Recommended />
+                    <Recommended />
+                    <Recommended />
+                    <Recommended />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='lg:mb-10'>
+                  <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:py-">
+                    <Recommended />
+                    <Recommended />
+                    <Recommended />
+                    <Recommended />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className='lg:mb-10'>
+                  <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:py- ">
+                    <Recommended />
+                    <Recommended />
+                    <Recommended />
+                    <Recommended />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+
               <div className='md:visible invisible'>
                 <RecommendedButton />
               </div>
+            </div>
+
+
+            <div className='py-4 md:hidden visible'>
+              <RecommnedHeader />
+              <Carousel className=''>
+                <Recommended />
+                <Recommended />
+                <Recommended />
+                <Recommended />
+              </Carousel>
             </div>
             {/* Recommended part */}
 
@@ -98,7 +174,7 @@ export default function Home() {
 
           </div>
         </div>
-
+        <Footer />
       </div>
     </>
   )

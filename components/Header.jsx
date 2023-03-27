@@ -1,13 +1,20 @@
-import react from 'react';
+import react, { useState } from 'react';
 import { AiOutlineHeart, AiOutlineUser } from 'react-icons/ai'
 import { IoIosNotificationsOutline } from 'react-icons/io'
 import Image from 'next/image';
+import ProfileModal from './ModalComponents/ProfileModal';
+
 const Header = () => {
+    const [dropDown, setDropDown] = useState(false)
     return (
         <>
+
+
             <nav
                 className="w-full md:w-[1000px] lg:w-full  flex-no-wrap relative flex items-center justify-between  py-4  dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start "
                 data-te-navbar-ref>
+
+
                 <div className="flex w-full flex-wra items-center justify-between px-6">
                     <button
                         className="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
@@ -85,7 +92,7 @@ const Header = () => {
                                 loading="lazy"
                                 width={18}
                                 height={19}
-                                 />
+                            />
 
                             <Image
                                 src="icons/wishlist.svg"
@@ -94,14 +101,14 @@ const Header = () => {
                                 loading="lazy"
                                 width={18}
                                 height={19}
-                                 />
+                            />
 
                         </div>
 
 
                         <div
-                            className=" px-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                            href="#">
+                            className="relative px-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 cursor-pointer"
+                            href="#" onClick={() => setDropDown((pre)=>!pre)}>
                             <Image
                                 src='icons/profile.svg'
                                 className="w-[18px] h-[19px] md:h-[32px] md:w-[28px]"
@@ -109,7 +116,14 @@ const Header = () => {
                                 loading="lazy"
                                 width={18}
                                 height={19}
-                                 />
+                            />
+
+                            {dropDown && (
+                                <div className='absolute top-[30px] left-[-100px] z-[25]'>
+                                    <ProfileModal />
+                                </div>
+
+                            )}
                         </div>
 
                         <div
@@ -126,7 +140,7 @@ const Header = () => {
                                 loading="lazy"
                                 width={18}
                                 height={19}
-                                 />
+                            />
                             <span
                                 className="absolute -mt-6 md:-mt-8 ml-1 md:ml-3 rounded-full bg-[#DA1E28] py-0 px-1 text-xs text-white"
                             >1</span>
