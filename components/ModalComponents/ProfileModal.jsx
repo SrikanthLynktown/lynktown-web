@@ -5,7 +5,10 @@ const ProfileModal = () => {
         <>
             <div className='w-[240px] h-[460px] bg-[#F5F5F5] rounded-lg p-'>
                 <div className="flex items-center border-b-2 py-5 mb-3 p-2" >
-                    <img className="w-[60px] h-[60px] rounded-full mr-4" src="images/dumy.jpg" alt="Avatar of Jonathan Reinink" />
+                    <Image className="w-[60px] h-[60px] rounded-full mr-4" src="images/dumy.jpg" alt="Avatar of Jonathan Reinink" 
+                        width={60}
+                        height={60}
+                    />
                     <div className="text-sm">
                         <p className="lg:text-[18px] font-bold text-[#000000]">Robert Maxwell</p>
                     </div>

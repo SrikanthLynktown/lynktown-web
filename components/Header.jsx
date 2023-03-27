@@ -44,9 +44,12 @@ const Header = () => {
                         <a
                             className="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0"
                             href="#">
-                            <img
+                            <Image
                                 src="images/Group 7739.svg" alt=""
-                                loading="lazy" />
+                                loading="lazy" 
+                                    width={300}
+                                    height={300}
+                                />
                         </a>
 
                     </div>

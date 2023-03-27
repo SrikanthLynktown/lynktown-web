@@ -16,7 +16,6 @@ import ProductsButton from '@/components/LandingCardSection/ProductsButton'
 import ArivalsButton from '@/components/LandingCardSection/ArrivalsButton'
 import RecommendedButton from '@/components/LandingCardSection/RecommendedButton'
 import { Carousel } from 'react-responsive-carousel';
-import HomeModal from '@/components/ModalComponents/homeModal'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from '@/components/Footer'
 
