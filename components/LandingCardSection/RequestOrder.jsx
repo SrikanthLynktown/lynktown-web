@@ -4,11 +4,11 @@ const RequestOrder = () => {
     return (
         <>
 
-            <div className=" relative text-gray-600 body-font relative mt-5 ">
+            <div className=" relative text-gray-600 body-font mt-5 ">
                 <div className="w-full md:w-[1000px] lg:w-full  containe mx-auto flex px-4 py-5 items-center justify-center flex-col">
                     <Image src="images/order request card.svg" alt=""
-                        width={1057}
-                        height={570}
+                        width={900}
+                        height={500}
                     />
 
                     {/* <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" /> */}
@@ -21,7 +21,7 @@ const RequestOrder = () => {
                     </svg>
                 </div> */}
                 <div className="p-4 ">
-                    <div className="px-4 md:gap-4 lg:w-2/3 md:w-full flex absolute top-[100px] md:top-[385px] md:left-48 md:top-2/3 ">
+                    <div className="px-4 md:gap-4 lg:w-2/3 md:w-full flex absolute top-[100px] md:top-[385px] md:left-48 ">
                         <div className="flex-grow w-[249px] h-[58px] md:w-[627px] md:h-[146px] ">
                             <h6 className='text:[22px] md:text-[52px]  font-bold text-[#FFFFFF] font-sans '> Request order
                             </h6>

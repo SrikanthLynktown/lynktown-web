@@ -140,7 +140,7 @@ export default function Home() {
             </div>
 
 
-            <div className='py-4 md:hidden visible'>
+            <div className='mt-8 md:hidden visible'>
               <RecommnedHeader />
               <Carousel className=''>
                 <Recommended />
@@ -155,7 +155,7 @@ export default function Home() {
             {/* Products part */}
             <div className='w-full md:w-[1000px] lg:w-full '>
               <ProductsHeader />
-              <div className="grid gap-4 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 py-4">
+              <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 py-4">
                 <Products />
                 <Products />
                 <Products />
