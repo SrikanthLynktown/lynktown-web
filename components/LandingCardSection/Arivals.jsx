@@ -5,9 +5,9 @@ const Arivals = () => {
         <>
             <div >
                 <section className="text-gray-600 body-font ">
-                    <div className="containe px-5 mb-5 md:mt-16 mx-auto">
-                        <div className="flex flex-wrap m- ">
-                            <div className=" py-3 w-full">
+                    <div className="containe mb-10 md:mt-16 mx-auto">
+                        <div className="flex flex-wrap m-  ">
+                            <div className=" md:py-3 w-full">
                                 <div className="block relative rounded overflow-hidden  ">
                                     <Image
                                         alt="ecommerce" className="object-cover object-center w-full h-full block" src="images/Rectangle 4530.svg"
@@ -15,7 +15,7 @@ const Arivals = () => {
                                         height={371}
                                     />
                                     <Image
-                                        alt="ecommerce" className="object-center w-5 h-5 absolute top-4  md:left-[240px] left-[120px]  text-[#6C6C6C] block" src="icons/wishlist.svg"
+                                        alt="ecommerce" className="object-center w-5 h-5 absolute top-4  md:left-[280px] left-[300px]   text-[#6C6C6C] block" src="icons/wishlist.svg"
                                         width={459}
                                         height={371}
                                     />

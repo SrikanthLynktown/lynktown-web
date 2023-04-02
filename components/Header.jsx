@@ -46,10 +46,10 @@ const Header = () => {
                             href="#">
                             <Image
                                 src="images/Group 7739.svg" alt=""
-                                loading="lazy" 
-                                    width={300}
-                                    height={300}
-                                />
+                                loading="lazy"
+                                width={300}
+                                height={300}
+                            />
                         </a>
 
                     </div>
@@ -111,7 +111,7 @@ const Header = () => {
 
                         <div
                             className="relative px-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400 cursor-pointer"
-                            href="#" onClick={() => setDropDown((pre)=>!pre)}>
+                            href="#" onClick={() => setDropDown((pre) => !pre)}>
                             <Image
                                 src='icons/profile.svg'
                                 className="w-[18px] h-[19px] md:h-[32px] md:w-[28px]"

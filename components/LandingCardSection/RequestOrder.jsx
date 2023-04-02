@@ -20,8 +20,8 @@ const RequestOrder = () => {
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </div> */}
-                <div className="p-4 ">
-                    <div className="px-4 md:gap-4 lg:w-2/3 md:w-full flex absolute top-[100px] md:top-[385px] md:left-48 ">
+                <div className="px-4">
+                    <div className="px-4 md:gap-4 lg:w-2/3 md:w-full flex absolute top-[100px] md:top-[300px] md:left-56">
                         <div className="flex-grow w-[249px] h-[58px] md:w-[627px] md:h-[146px] ">
                             <h6 className='text:[22px] md:text-[52px]  font-bold text-[#FFFFFF] font-sans '> Request order
                             </h6>

@@ -20,7 +20,7 @@ const WishList = () => {
 
                         <div className="mx-auto flex flex-col items-center bg-whit border border-[#6A5B40] rounded-lg shadow md:flex-row ">
                             <Image
-                                className="p-4 object-cover w-full rounded-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-lg" src="images/wishlistimg.svg" alt=""
+                                className="p-4 object-cover w-full rounded-lg h-96 md:h-auto md:w-48  md:rounded-lg" src="images/wishlistimg.svg" alt=""
                                 width={10}
                                 height={10}
                             />
